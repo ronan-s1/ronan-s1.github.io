@@ -1,0 +1,390 @@
+body {
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: Circular std, "Lato", sans-serif;
+    transition:.5s;
+    background: #020200;
+    color:#e9e9e9;
+    max-height:100%; max-width:100%;  transition: .3s;
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+a {
+    color:#8e8e8e;
+    text-decoration:none;
+}
+
+h3{
+    padding-left:32px;
+    font-weight:lighter
+}
+
+nav {
+    width:80%;
+    display:inline-block;
+}
+nav > span { 
+    font-size: 5.1vh;
+    cursor: pointer;
+}
+
+.intro {
+    bottom:0%;
+    position:absolute;
+    letter-spacing:-.2vmax;
+    max-width:90vw;
+}
+
+.intro h1{
+    font-size: 65px;
+}
+
+.intro-link {
+    color: #838383 !important;
+    font-size: 40px;
+    word-spacing: 2px;
+}
+
+ul {
+    padding-left:32px;
+    margin:0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e9e9e9;
+    overflow-x: hidden;
+    transition: 0.3s ease-out;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 5vh;
+    color: #464646;
+    display: block;
+    opacity:0; position: relative; 
+    width:60%;
+    top:25px;
+    transition: 0.3s;
+}
+
+.sidenav a.show {
+    opacity:1;
+    top:0; 
+}
+
+.sidenav a.show:hover {
+    transition-delay: 0s !important;
+}
+
+@keyframes show { 
+    0%{ opacity:1; } 
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: black;
+}
+
+.closebtn {
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.follow-me ul li { 
+    display:inline-block; 
+    transition-duration:0.5s; 
+}
+
+.follow-me a { 
+    font-size: 20px !important;
+    transition-duration:0.5s; 
+    padding: 0;
+    margin-right: 16px;
+    color: #020200;
+}
+
+.follow-me ul li:first-child{
+    margin-left:0;
+}
+
+.follow-me {
+    position:absolute;
+    bottom:0; 
+    margin-bottom:6em;
+}
+
+
+/*-----custom style starts------*/
+
+.top-right{
+    float:right;
+    margin-top:2vh;
+    font-size: 18px;
+}
+
+.top-right ul li {
+    display:inline-block;
+    margin-right:10px; 
+    /* transition-duration:0.5s; */
+}
+
+.top-right a{
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+
+#main span{
+    padding-top:0;
+}
+
+.top-right li:hover{
+    transform: scale(1.4,1.4);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-duration:0.5s;
+}
+
+
+@media (min-width:1000px) {
+    body { 
+        padding: 0 10vw;
+    }
+
+    .sidenav a {
+        font-size: 3.3vmax;
+    }
+
+    .intro {
+        bottom:0%;
+        font-size: 15.6px; 
+        max-width:70vw; 
+        letter-spacing:-.2vmax; 
+        min-width:900px;
+    }
+
+    .sidenav .closebtn {
+        top:0em; 
+    }
+}
+
+
+@media only screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sidenav .closebtn {
+        padding-top: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .top-right {
+        display:none; 
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .about{
+        width: 65%;
+    }
+
+    .intro h1{
+        font-size: 50px !important;
+        letter-spacing:-.2vmax;
+    }
+
+    .intro-link {
+        font-size: 35px !important;
+        letter-spacing:-.2vmax;
+    }
+}
+
+nav > span b { 
+    opacity: 0;
+    margin-left:-1em;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+nav > span:hover b {
+    opacity: 1;
+    margin-left:0;
+}
+
+div.overlay { 
+    background: #000;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    opacity:0;
+    transition:.3s ease-in;
+    visibility: hidden;
+}
+
+div.overlay.active { 
+    opacity:.85; 
+    transition:.3s ease-in; 
+    visibility: visible;
+}
+
+
+/* --- cursor --- */
+* {
+    cursor: none;
+}
+
+[data-cursor] {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    mix-blend-mode: difference;
+    z-index: 100;
+    animation: blobRadius 3s ease infinite, blobBackground 15s ease infinite;
+}
+  
+@keyframes blobRadius {
+    0%,
+    100% {
+      border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%;
+    }
+    20% {
+      border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%;
+    }
+    40% {
+      border-radius: 46% 74% 60% 46% / 74% 58% 62% 40%;
+    }
+    60% {
+      border-radius: 47% 73% 31% 59% / 40% 30% 80% 60%;
+    }
+    80% {
+      border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
+    }
+}
+
+/* about */
+
+.about{
+    padding-top: 50px;
+    width: 610px;
+    /* margin: auto; */
+    max-width: fit-content;
+    padding-bottom: 50px;
+}
+
+.about p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.about h4{
+    font-size: 30px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease-in 0.25s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+.skills i{
+    margin-bottom: 13px;
+}
+
+
+/* projects */
+
+.container a {
+    color: inherit;
+    padding-bottom: 20px;
+    text-decoration: inherit;
+    display: block;
+}
+
+.container h4 {
+    font-size: 35px;
+}
+
+.container a:hover > :first-child {
+    opacity: 100;
+}
+
+.container a > :first-child {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.container {
+    font-size: 32px;
+    /* margin: auto; */
+    padding-top: 27px;
+}
+
+.projects {
+    color: #e6e6e6;
+    font-size: 29px;
+}
+
+.links {
+    font-size: .8em;
+    margin-top: 5%;
+    color: #e6e6e6;
+}
+
+.description {
+    font-size: 13px;
+    color: #777777;
+}
+
+@media only screen and (max-width: 661px) {
+    .description {
+        display: none;
+    }
+}
+
+.center-container{
+    margin: auto;
+}
+
+.last-project-link{
+    margin-top: -14px;
+    font-size: 29px;
+    letter-spacing: 3px;
+}
