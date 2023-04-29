@@ -60,21 +60,3 @@
     </div>  
 </body>
 </html>
-<script>
-const isMobile = /Mobi/.test(navigator.userAgent);
-console.log(isMobile)
-if (!isMobile) {
-    // Device is not mobile, assume it has a cursor and initialize custom cursor
-    document.addEventListener('DOMContentLoaded', () => {
-        new window['Cursor']({
-        targets: ['a', '#menu']
-    })
-})
-} else {
-    // Device is mobile, hide custom cursor
-    const cursorElement = document.querySelector('[data-cursor]');
-        if (cursorElement) {
-        cursorElement.style.display = 'none';
-    }
-}
-</script>
