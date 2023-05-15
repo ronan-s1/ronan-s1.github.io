@@ -37,6 +37,12 @@ nav > span {
     cursor: pointer;
 }
 
+.menu b{
+    cursor: none;
+    font-size: 19px; 
+    vertical-align: middle;
+}
+
 .intro {
     bottom:0%;
     position:absolute;
