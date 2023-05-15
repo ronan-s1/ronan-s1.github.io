@@ -30,6 +30,7 @@ h3{
 nav {
     width:80%;
     display:inline-block;
+    cursor: none;
 }
 
 nav > span { 
@@ -37,8 +38,11 @@ nav > span {
     cursor: pointer;
 }
 
-.menu b{
+.menu{
     cursor: none;
+}
+
+.menu b{
     font-size: 19px; 
     vertical-align: middle;
 }
