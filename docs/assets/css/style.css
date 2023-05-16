@@ -43,9 +43,9 @@ nav > span {
 }
 
 .menu b{
-    font-size: 46px;
+    font-size: 31px;
     cursor: none;
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 
 .intro {
