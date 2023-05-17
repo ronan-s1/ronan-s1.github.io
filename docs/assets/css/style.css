@@ -35,7 +35,7 @@ nav {
 }
 
 nav > span { 
-    font-size: 5.1vh;
+    font-size: 54px;
     cursor: pointer;
 }
 
@@ -44,9 +44,9 @@ nav > span {
 }
 
 .menu b{
-    font-size: 31px;
+    font-size: 38.5px;
     cursor: none;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .intro {
@@ -208,6 +208,25 @@ ul {
 @media screen and (max-width:700px){
     .sidenav .closebtn {
         padding-top: 3.5vh;
+    }
+
+    nav > span { 
+        font-size: 50px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav > span { 
+        font-size: 45px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 400px){
+    nav > span { 
+        font-size: 40px;
+        cursor: pointer;
     }
 }
 
