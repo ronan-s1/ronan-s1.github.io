@@ -66,6 +66,34 @@ nav > span {
     word-spacing: 2px;
 }
 
+@media only screen and (max-width: 940px) {
+    .about{
+        width: 65%;
+    }
+
+    .intro h1{
+        font-size: 50px !important;
+        letter-spacing:-.2vmax;
+    }
+
+    .intro-link {
+        font-size: 35px !important;
+        letter-spacing:-.2vmax;
+    }
+}
+
+@media screen and (max-width:500px){
+    .intro h1{
+        font-size: 42px !important;
+        letter-spacing:-.2vmax;
+    }
+
+    .intro-link {
+        font-size: 27px !important;
+        letter-spacing:-.2vmax;
+    }
+}
+
 ul {
     padding-left:32px;
     margin:0;
@@ -233,22 +261,6 @@ ul {
 @media screen and (max-width: 665px){
     .top-right {
         display:none; 
-    }
-}
-
-@media only screen and (max-width: 940px) {
-    .about{
-        width: 65%;
-    }
-
-    .intro h1{
-        font-size: 50px !important;
-        letter-spacing:-.2vmax;
-    }
-
-    .intro-link {
-        font-size: 35px !important;
-        letter-spacing:-.2vmax;
     }
 }
 
