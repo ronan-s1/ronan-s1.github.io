@@ -222,6 +222,7 @@ ul {
     .sidenav .closebtn {
         top:0em; 
     }
+    
 }
 
 @media only screen and (max-height: 450px) {
@@ -241,6 +242,10 @@ ul {
     nav > span { 
         font-size: 50px;
         cursor: pointer;
+    }
+
+    .closebtn {
+        margin-bottom: 20px;
     }
 }
 
