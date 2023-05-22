@@ -146,6 +146,10 @@ ul {
     letter-spacing: 5px;
 }
 
+.closebtn:hover {
+    color: #132b43 !important;
+}
+
 #main {
     transition: margin-left .5s;
     padding: 16px;
