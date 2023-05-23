@@ -142,13 +142,12 @@ ul {
 }
 
 .closebtn {
-    color: #384d61 !important;
-    letter-spacing: 5px;
-    margin-bottom: -6px;
+    color: #3d6589 !important;
+
 }
 
 .closebtn:hover {
-    color: #132b43 !important;
+    color: #3d6589 !important;
 }
 
 #main {
