@@ -223,7 +223,7 @@ ul {
         min-width:900px;
     }
 
-    .sidenav .closebtn {
+    .sidenav {
         top:0em; 
     }
     
@@ -239,7 +239,7 @@ ul {
 }
 
 @media screen and (max-width:700px){
-    .sidenav .closebtn {
+    .sidenav {
         padding-top: 3.5vh;
     }
 
