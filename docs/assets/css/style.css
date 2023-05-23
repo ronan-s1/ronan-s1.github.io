@@ -144,6 +144,7 @@ ul {
 .closebtn {
     color: #384d61 !important;
     letter-spacing: 5px;
+    margin-bottom: -6px;
 }
 
 .closebtn:hover {
