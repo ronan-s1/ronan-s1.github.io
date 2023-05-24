@@ -161,10 +161,10 @@ ul {
 }
 
 .follow-me a { 
-    font-size: 20px !important;
+    font-size: 21px !important;
     transition-duration:0.5s; 
     padding: 0;
-    margin-right: 16px;
+    margin-right: 14px;
     color: #233647;
 }
 
@@ -175,7 +175,8 @@ ul {
 .follow-me {
     position:absolute;
     bottom:0; 
-    margin-bottom:6em;
+    margin-bottom: 90px;
+    margin-left: 2px;
 }
 
 /*-----custom style starts------*/
