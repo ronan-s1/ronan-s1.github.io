@@ -52,7 +52,7 @@ nav > span {
 .intro {
     bottom:0%;
     position:absolute;
-    letter-spacing:-.2vmax;
+    letter-spacing: -0.2vmax;
     max-width:90vw;
 }
 
@@ -64,6 +64,16 @@ nav > span {
     color: #829eb8 !important;
     font-size: 40px;
     word-spacing: 2px;
+}
+
+@media screen and (max-height: 845px){
+    .intro h1{
+        font-size: 55px;
+    }
+
+    .intro-link {
+        font-size: 33px;
+    }
 }
 
 @media only screen and (max-width: 940px) {
