@@ -377,9 +377,15 @@ div.overlay.active {
         opacity: 1;
     }
 }
-  
-.skills i{
-    margin-bottom: 13px;
+
+
+.experience:hover > span {
+    opacity: 100;
+}
+
+.experience span {
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 /* projects */
@@ -390,7 +396,6 @@ div.overlay.active {
     text-decoration: inherit;
     display: block;
 }
-
 
 .container a:hover > :first-child {
     opacity: 100;
@@ -407,8 +412,7 @@ div.overlay.active {
     font-size: 22px;
 }
 
-
-.description {
+.description, .dates {
     font-size: 13px;
     color: #829eb8;
 }
