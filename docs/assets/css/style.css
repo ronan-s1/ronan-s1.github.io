@@ -54,11 +54,11 @@ nav > span {
 }
 
 .fade-out-animation {
-    animation: fadeOut 0.7s ease-in-out forwards;
+    animation: fadeOut 1s ease-in-out forwards;
 }
 
 .fade-in-animation {
-    animation: fadeIn 0.7s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hidden {
