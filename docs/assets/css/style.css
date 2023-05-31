@@ -43,11 +43,50 @@ nav > span {
     cursor: none;
 }
 
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-out-animation {
+    animation: fadeOut 0.7s ease-in-out forwards;
+}
+
+.fade-in-animation {
+    animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+.hidden {
+    display: none;
+}
+  
+  
 .menu b{
     font-size: 40px;
     cursor: none;
     /* vertical-align: middle; */
 }
+
+.spaces{
+    margin-left: -60px;
+}
+
+
+.nav-page{
+    font-size: 30px !important;
+    /* margin-left: 20px; */
+    transition: 0.1s;
+}
+
+.dot{
+    font-size: 48px !important;
+}
+
 
 .intro {
     bottom:0%;
@@ -57,12 +96,12 @@ nav > span {
 }
 
 .intro h1{
-    font-size: 65px;
+    font-size: 68px;
 }
 
 .intro-link {
     color: #829eb8 !important;
-    font-size: 40px;
+    font-size: 42px;
     word-spacing: 2px;
 }
 
@@ -255,24 +294,37 @@ ul {
     }
 
     nav > span { 
-        font-size: 50px;
+        font-size: 51px;
         cursor: pointer;
+    }
+
+    .nav-page{
+        font-size: 29px !important;
     }
 }
 
 @media screen and (max-width: 500px){
     nav > span { 
-        font-size: 45px;
+        font-size: 46px;
         cursor: pointer;
+    }
+
+    .nav-page{
+        font-size: 25.5px !important;
     }
 }
 
 @media screen and (max-width: 400px){
     nav > span { 
-        font-size: 40px;
+        font-size: 41px;
         cursor: pointer;
     }
+
+    .nav-page{
+        font-size: 24px !important;
+    }
 }
+
 
 @media screen and (max-width: 665px){
     .top-right {
@@ -385,7 +437,7 @@ div.overlay.active {
 
 .experience span {
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.15s;
 }
 
 /* projects */

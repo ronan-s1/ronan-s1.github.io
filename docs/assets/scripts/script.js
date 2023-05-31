@@ -1,53 +1,57 @@
 document.addEventListener('DOMContentLoaded', function() {
-let sideNav =document.getElementById("mySidenav");
-let theMenu = document.querySelector('.menu');
-let main = document.getElementById('main');
-let theOverlay = document.querySelector('.overlay');
-let closeBtn = document.querySelector('.closebtn');
+  let sideNav = document.getElementById("mySidenav");
+  let theMenu = document.querySelector('.menu');
+  let main = document.getElementById('main');
+  let theOverlay = document.querySelector('.overlay');
+  let closeBtn = document.querySelector('.closebtn');
+  let theLinks = sideNav.querySelectorAll('a');
 
-let theLinks = sideNav.querySelectorAll('a');
+  theMenu.addEventListener('click', openNav);
+  closeBtn.addEventListener('click', closeNav);
+  theOverlay.addEventListener('click', closeNav);
 
-document.addEventListener('click', navigate);
-
-function navigate(e) {
-  if(e.target == theMenu) {
+  function openNav(e) {
+    e.preventDefault();
     sideNav.style.width = "100vw";
     document.getElementById("main").style.marginLeft = "10vw";
-  theOverlay.classList.toggle('active'); 
-  for(i = 0; i <= theLinks.length; i++) { theLinks[i].classList.toggle('show'); 
-theLinks[i].style.transitionDelay = i / 10.2 + 's'; 
-}//for loop end   
+    theOverlay.classList.add('active');
+    theLinks.forEach((link, index) => {
+      link.style.transitionDelay = index / 10.2 + 's';
+      setTimeout(() => {
+        link.classList.add('show');
+      }, 20);
+    });
   }
-  //if open
-  
-  else if(e.target == closeBtn || e.target == theOverlay){  sideNav.style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
- theOverlay.classList.toggle('active');
-for(i = 0; i <= theLinks.length; i++) { theLinks[i].classList.toggle('show'); }
-  }   
-}
+
+  function closeNav(e) {
+    e.preventDefault();
+    sideNav.style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    theOverlay.classList.remove('active');
+    theLinks.forEach((link) => {
+      link.classList.remove('show');
+    });
+  }
 });
+
 
 
 window.onload = function() {
     var elements = document.getElementsByClassName("fade-in");
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.opacity = 0;
+        elements[i].style.opacity = 0;
     }
     
     var index = 0;
     var intervalId = setInterval(function() {
-      if (index >= elements.length) {
-        clearInterval(intervalId);
-        return;
-      }
-      elements[index].style.opacity = 1;
-      index++;
-    }, 200); // adjust the interval time to control the speed of the animation
-
-
-    
-  }
+        if (index >= elements.length) {
+            clearInterval(intervalId);
+            return;
+        }
+        elements[index].style.opacity = 1;
+        index++;
+    }, 300); // adjust the interval time to control the speed of the animation
+}
   
 
 

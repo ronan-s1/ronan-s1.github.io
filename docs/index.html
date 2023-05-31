@@ -19,20 +19,13 @@
         <a href="/projects.html">projects</a>
         <!-- <a href="/resume.pdf" target="_blank">resume</a> -->
         <a href="https://linktr.ee/ronansingpurwala" target="_blank">contact</a>
-        <div class="follow-me">
-            <ul>
-                <li><a href="https://github.com/ronan-s1" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ronan-singpurwala-b47ba2240/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="mailto:singpurwala13@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a></li>
-            </ul>
-        </div>
     </div>
 
     <div id="main">
         <header>
             <nav>
-                <span class="menu"><b>&nbsp;&nbsp;</b> ronan.</span>
-            </nav>
+                <span class="menu"><b>&nbsp;&nbsp;</b> ronan<span class="dot">.</span><span id="menu-fade" class="nav-page"></span></span>
+            </nav>              
             <div class="top-right">
                 <ul>
                     <li><a href="https://github.com/ronan-s1" target="_blank"><i class="fa-brands fa-github"></i></a></li>
@@ -85,3 +78,28 @@
         <path fill="#132b43" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
     </svg>  
 </div>
+
+<script>
+function toggleText() {
+  var menu_fade = document.getElementById('menu-fade');
+  menu_fade.classList.add('fade-out-animation');
+
+  setTimeout(function() {
+    if (menu_fade.textContent === '') {
+      menu_fade.textContent = 'menu';
+      menu_fade.classList.remove('hidden');
+    } else {
+      menu_fade.textContent = '';
+    }
+
+    menu_fade.classList.remove('fade-out-animation');
+    menu_fade.classList.add('fade-in-animation');
+
+    setTimeout(function() {
+      menu_fade.classList.remove('fade-in-animation');
+    }, 700);
+  }, 10000); // Delay
+}
+
+toggleText(); // Call the function once to start the transition
+</script>
