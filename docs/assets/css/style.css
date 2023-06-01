@@ -67,20 +67,19 @@ nav > span {
   
   
 .menu b{
-    font-size: 40px;
+    /* font-size: 40px; */
     cursor: none;
+    margin-left: -47px;
     /* vertical-align: middle; */
 }
 
-.spaces{
-    margin-left: -60px;
-}
 
 
 .nav-page{
     font-size: 30px !important;
     /* margin-left: 20px; */
     transition: 0.1s;
+    /* font-weight: 100; */
 }
 
 .dot{
@@ -301,6 +300,11 @@ ul {
     .nav-page{
         font-size: 29px !important;
     }
+
+    .menu b{
+        cursor: none;
+        margin-left: -44px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -311,6 +315,11 @@ ul {
 
     .nav-page{
         font-size: 25.5px !important;
+    }
+
+    .menu b{
+        cursor: none;
+        margin-left: -39.4px;
     }
 }
 
@@ -323,8 +332,12 @@ ul {
     .nav-page{
         font-size: 24px !important;
     }
-}
 
+    .menu b{
+        cursor: none;
+        margin-left: -35px;
+    }
+}
 
 @media screen and (max-width: 665px){
     .top-right {
