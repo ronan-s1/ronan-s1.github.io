@@ -91,13 +91,9 @@ function toggleText() {
   menu_fade.classList.add('fade-out-animation');
 
   setTimeout(function() {
-    if (!menu_fade.classList.contains('hovered')) {
-      menu_fade.textContent = 'menu';
-    }
-
+    menu_fade.textContent = 'menu';
     menu_fade.classList.remove('fade-out-animation');
     menu_fade.classList.add('fade-in-animation');
-
     setTimeout(function() {
       menu_fade.classList.remove('fade-in-animation');
     }, 1000);
@@ -105,26 +101,4 @@ function toggleText() {
 }
 
 toggleText(); // Call the function once to start the transition
-
-var menu = document.querySelector('.menu');
-menu.addEventListener('mouseenter', function() {
-  var menu_fade = document.getElementById('menu-fade');
-  menu_fade.classList.add('fade-out-animation');
-  menu_fade.classList.add('hovered');
-
-  setTimeout(function() {
-    menu_fade.textContent = '';
-    menu_fade.classList.remove('fade-out-animation');
-    menu_fade.classList.add('fade-in-animation');
-
-    setTimeout(function() {
-      menu_fade.classList.remove('fade-in-animation');
-    }, 1000);
-  }, 1000);
-});
-
-menu.addEventListener('mouseleave', function() {
-  var menu_fade = document.getElementById('menu-fade');
-  menu_fade.classList.remove('hovered');
-});
 </script>
