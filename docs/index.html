@@ -86,19 +86,44 @@
 </div>
 
 <script>
-function toggleText() {
-  var menu_fade = document.getElementById('menu-fade');
-  menu_fade.classList.add('fade-out-animation');
+// function toggleText() {
+//   var menu_fade = document.getElementById('menu-fade');
+//   menu_fade.classList.add('fade-out-animation');
 
-  setTimeout(function() {
-    menu_fade.textContent = 'menu';
-    menu_fade.classList.remove('fade-out-animation');
-    menu_fade.classList.add('fade-in-animation');
-    setTimeout(function() {
-      menu_fade.classList.remove('fade-in-animation');
-    }, 1000);
-  }, 8000); // Delay
+//   setTimeout(function() {
+//     menu_fade.textContent = 'menu';
+//     menu_fade.classList.remove('fade-out-animation');
+//     menu_fade.classList.add('fade-in-animation');
+//     setTimeout(function() {
+//       menu_fade.classList.remove('fade-in-animation');
+//     }, 1000);
+//   }, 8000); // Delay
+// }
+
+// toggleText(); // Call the function once to start the transition
+
+const element = document.querySelector('nav > span');
+let delay = 8000
+function applyCssEffect() {
+    element.querySelector('b').style.opacity = '1';
+    element.querySelector('b').style.marginLeft = '0';
+
+    setTimeout(() => {
+        element.querySelector('b').style.opacity = '';
+        element.querySelector('b').style.marginLeft = '';
+    }, 300);
 }
 
-toggleText(); // Call the function once to start the transition
+function triggerCssEffect() {
+    applyCssEffect();
+    setTimeout(() => {
+        applyCssEffect();
+    }, 620);
+    setTimeout(triggerCssEffect, delay);
+}
+
+setTimeout(() => {
+    triggerCssEffect();
+}, 1300);
+
 </script>
