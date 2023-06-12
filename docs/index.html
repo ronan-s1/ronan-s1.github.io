@@ -87,7 +87,7 @@
 
 <script>
 const element = document.querySelector('nav > span');
-let delay = 8000
+let delay = 5500
 function applyCssEffect() {
     element.querySelector('b').style.opacity = '1';
     element.querySelector('b').style.marginLeft = '0';
@@ -108,6 +108,5 @@ function triggerCssEffect() {
 
 setTimeout(() => {
     triggerCssEffect();
-}, 1300);
-
+}, delay);
 </script>
