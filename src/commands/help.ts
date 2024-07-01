@@ -17,7 +17,7 @@ const helpObj = {
     ],
     [
       "'repo'",
-      "View the Github Repository."
+      "View the Github repository."
     ],
     ["'banner'",
       "Display the banner."
