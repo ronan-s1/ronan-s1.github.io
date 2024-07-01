@@ -1,0 +1,61 @@
+{
+  "ascii": [
+    "██████╗░░█████╗░███╗░░██╗░█████╗░███╗░░██╗",
+    "██╔══██╗██╔══██╗████╗░██║██╔══██╗████╗░██║",
+    "██████╔╝██║░░██║██╔██╗██║███████║██╔██╗██║",
+    "██╔══██╗██║░░██║██║╚████║██╔══██║██║╚████║",
+    "██║░░██║╚█████╔╝██║░╚███║██║░░██║██║░╚███║",
+    "╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝░░╚═╝╚═╝░░╚══╝"
+  ],
+  "title": "Ronan",
+  "username": "visitor",
+  "hostname": "ronansingpurwala.com",
+  "password": "123",
+  "repoLink": "https://github.com/ronan-s1/ronan-s1.github.io",
+  "social": { 
+    "email": "singpurwala13@email.com",
+    "github": "https://github.com/ronan-s1",
+    "linkedin": "https://www.linkedin.com/in/ronan-singpurwala-b47ba2240/"
+  },
+  "aboutGreeting": "Hey there, I'm Ronan Singpurwala!<br>I'm a developer based in Dublin, Ireland. I like building tools that make people's lives easier.<br><br><span style='font-weight: 800'>Experience:</span> SRE @ Workday, Web Developer @ Skillko<br><span style='font-weight: 800'>Skills:</span> Python, Go, C, JavaScript, Java, Git, GNU/Linux, Docker, Grafana an more...",
+  "projects": [
+    [
+      "SaleSights", 
+      " A financial management and POS system for small businesses with multiple daily users.", 
+      "https://salesights.xyz/#/"
+    ],
+    [
+      "Dublin Landmarks",
+      " A full stack GeoDjango PWA to help people find things to do in Dublin.",
+      "https://github.com/ronan-s1/dublin-landmarks-PWA"
+    ],
+    [
+      "DUBLIN FOOD LIST",
+      " My silly food \"blog\" which people genuinely look at for recommendations.",
+      "https://foodindublin.com/"
+    ]
+  ],
+  "colors": {
+    "background": "#0C0623",
+    "foreground": "#F8DDE5",
+    "banner": "#FF9951",
+    "border": {
+      "visible": true,
+      "color": "#8AFFA0"
+    },
+    "prompt": {
+      "default": "#A5A7A7",
+      "user": "#66FF66",
+      "host": "#70FDFF",
+      "input": "#33FF33"
+    },
+    "link": {
+      "text": "#B6AAEE",
+      "highlightColor": "#8AFFA0",
+      "highlightText": "#0C0623"
+    },
+    "commands": {
+      "textColor": "#66FF99"
+    }
+  }
+}
