@@ -293,10 +293,13 @@ function commandHandler(input : string) {
       break;
     default:
       if(bareMode) {
-        writeLines(["type 'help'", "<br>"])
+        writeLines(["type 'help'", "<br>"]);
         break;
       }
       writeLines(DEFAULT);
+      break;
+    case 'dir':
+      writeLines(["Windows user alert 🚨", "<br>"]);
       break;
   }  
 }
