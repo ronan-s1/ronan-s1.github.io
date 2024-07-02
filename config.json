@@ -14,10 +14,10 @@
   "repoLink": "https://github.com/ronan-s1/ronan-s1.github.io",
   "social": { 
     "email": "singpurwala13@email.com",
-    "github": "https://github.com/ronan-s1",
-    "linkedin": "https://www.linkedin.com/in/ronan-singpurwala-b47ba2240/"
+    "github": "ronan-s1",
+    "linkedin": "ronan-singpurwala-b47ba2240"
   },
-  "aboutGreeting": "Hey there, I'm Ronan Singpurwala!<br>I'm a developer based in Dublin, Ireland. I like building tools that make people's lives easier.<br><br><span style='font-weight: 800'>Experience:</span> SRE @ Workday, Web Developer @ Skillko<br><span style='font-weight: 800'>Skills:</span> Python, Go, C, JavaScript, Java, Git, GNU/Linux, Docker, Grafana and more...",
+  "aboutGreeting": "Hey there, I'm Ronan Singpurwala!<br>I'm a developer based in Dublin, Ireland. I like building tools that make people's lives easier.<br><br><span style='font-weight: 800'>Experience:</span> SRE @ Workday, Web Developer @ Skillko<br><span style='font-weight: 800'>Education:</span> BSc in Computer Science Grade (First Class Honours) <br><span style='font-weight: 800'>Skills:</span> Python, Go, C, JavaScript, Java, Git, GNU/Linux, SQL, Docker, Grafana and more...",
   "projects": [
     [
       "SaleSights", 
