@@ -168,7 +168,7 @@ function commandHandler(input : string) {
           writeLines(["there's no more src folder.", "<br>"])
         } else {
           if(bareMode) {
-            writeLines(["What else are you trying to delete?", "<br>"])
+            writeLines(["The audacity...", "<br>"])
           } else {
             writeLines(["<br>", "Directory not found.", "type <span class='command'>'ls'</span> for a list of directories.", "<br>"]);
           }
