@@ -10,7 +10,6 @@
   "username": "visitor",
   "hostname": "ronansingpurwala.com",
   "password": "123",
-  "repoLink": "https://github.com/ronan-s1/ronan-s1.github.io",
   "social": { 
     "email": "singpurwala13@email.com",
     "github": "ronan-s1",
@@ -22,16 +21,6 @@
       "SaleSights", 
       " A financial management and POS system for small businesses with multiple daily users.", 
       "https://salesights.xyz/#/"
-    ],
-    [
-      "Dublin Landmarks",
-      " A full stack GeoDjango PWA to help people find things to do in Dublin.",
-      "https://github.com/ronan-s1/dublin-landmarks-PWA"
-    ],
-    [
-      "DUBLIN FOOD LIST",
-      " My silly food \"blog\" which people genuinely look at for recommendations.",
-      "https://foodindublin.com/"
     ]
   ],
   "colors": {

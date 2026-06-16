@@ -13,8 +13,8 @@ const helpObj = {
       "A perplexing question."
     ],
     [
-      "'repo'",
-      "View the Github repository."
+      "'github'",
+      "Open my GitHub profile."
     ],
     ["'banner'",
       "Display the banner."

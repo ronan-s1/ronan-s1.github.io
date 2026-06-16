@@ -27,10 +27,10 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "whoami", "github", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
-const REPO_LINK = command.repoLink;
+const GITHUB_LINK = `https://github.com/${command.social.github}`;
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -224,12 +224,6 @@ function commandHandler(input : string) {
       }
       writeLines(PROJECTS);
       break;
-    case 'repo':
-      writeLines(["Redirecting to github.com...", "<br>"]);
-      setTimeout(() => {
-        window.open(REPO_LINK, '_blank');
-      }, 500);
-      break;
     case 'linkedin':
       writeLines(["Redirecting to linkedin.com...", "<br>"]);
       setTimeout(() => {
@@ -239,7 +233,7 @@ function commandHandler(input : string) {
     case 'github':
       writeLines(["Redirecting to github.com...", "<br>"]);
       setTimeout(() => {
-        window.open('https://github.com/ronan-s1', '_blank');
+        window.open(GITHUB_LINK, '_blank');
       }, 500);
       break;
     case 'email':
